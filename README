@@ -1,0 +1,8 @@
+
+Snake Cube Puzzle Solver
+========================
+
+I have one of those at home.
+Lacking the patience to twist the cubes around until I find a solution,
+I decided to write a solver such that I just have to twist according
+to the computed solution.
