@@ -1,4 +1,11 @@
 #!/usr/bin/env python2
+#
+# Solve a snake cube puzzle!
+#
+# Author:  Daniel Wiltsche-Prokesch <daniel.prokesch@gmail.com>
+# Date:    2018-02-01
+# License: MIT
+#
 
 import sys
 
