@@ -112,6 +112,13 @@ def check_input(lst):
     assert all(dist(x1,x) == 1 for (x1, x) in zip(S[0:-1], S[1:]))
     print "Input OK"
 
+def print_input(lst):
+    """Print 2D input snake."""
+    xmax, ymax = [max(v) for v in zip(*lst)]
+    for yrow in range(ymax,-1,-1):
+        pts = [x for x,y in lst if y == yrow]
+        print ''.join(['[]' if i in pts else '  ' for i in range(xmax+1)])
+
 def lift(lst):
     """Lift from 2D to 3D, with z=0."""
     return [(x, y, 0) for (x,y) in lst]
@@ -164,6 +171,7 @@ def solve(lst, idx):
 
 if __name__ == "__main__":
     print "input:", S
+    print_input(S)
     check_input(S)
     s = lift(S)
     solve(s, 2)
